@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Don't forget to change the title and connect the CSS file -->
-  <title>Project Library</title>
+  <title>Recipies Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Project Library</h1>
-  <!-- Don't forget to connect the JavaScript file -->
+  <h1>Recipes Library</h1>
+  <section class="filters" id="filters">
+    <div>
+      <h3>Filter</h3>
+      <button id="all">All cuisine</button>
+      <button id="italian">Italian</button>
+      <button id="southAmerican">South American</button>
+      <button id="balanced">Balanced</button>
+      <button id="highFiber">High-fiber</button>
+      <button id="lowCarb">Low-carb</button>
+      <button id="southEastAsian">South East Asian</button>
+      <button id="chinese">Chinese</button>
+      <button id="american">American</button>
+    </div>
+    <div>
+      <h3>Cooking time</h3>
+      <button id="longPrepTime">Longest</button>
+      <button id="kortPrepTime">Shortest</button>
+    </div>
+  </section>
+  <!--Filter section ends-->
+  <section id="recipes" class="recipe-block">
+    <div class="recipe-card">
+      <h4>Individual vegetarian lasagnes</h4>
+      <img src="recipe-images/individual-vegetarian-lasagnes.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Vegetarian Stir-Fried Garlic Scape</h4>
+      <img src="recipe-images/vegetarian-stir-fried-garlic-s.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Cheat’s cheesy focaccia</h4>
+      <img src="recipe-images/cheat’s-cheesy-focaccia.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Vegetarian Shepherd's Pie</h4>
+      <img src="recipe-images/vegetarian-shepherd's-pie.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Chicken Paprikash</h4>
+      <img src="recipe-images/chicken-paprikash.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Baked Chicken</h4>
+      <img src="recipe-images/baked-chicken.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Deep Fried Fish Bones</h4>
+      <img src="recipe-images/deep-fried-fish-bones.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Burnt-Scallion Fish</h4>
+      <img src="recipe-images/fish-dish.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Curry-Crusted Fish</h4>
+      <img src="recipe-images/curry-crusted-fish.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Meat Stock</h4>
+      <img src="recipe-images/meat.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Homemade Meat Broth</h4>
+      <img src="recipe-images/clear-meat-broth.jpg" alt="">
+    </div>
+    <div class="recipe-card">
+      <h4>Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe</h4>
+      <img src="recipe-images/grilled.jpg" alt="">
+    </div>
+  </section>
+  <script src="./script.js"></script>
 </body>
+
 </html>

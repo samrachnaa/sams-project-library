@@ -1,0 +1,41 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recipe-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.recipe-card {
+  background-color: #F5F2EE;
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 350px;
+  height: 250px;
+  margin: 16px;
+}
+
+h4 {
+  margin: 10px 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
