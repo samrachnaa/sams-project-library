@@ -291,3 +291,18 @@ btnSouthEastAsian.addEventListener("click", () =>{
   const southEastAsianRecipes = recipes.filter((recipe) => recipe.cuisineType.includes("south east asian"))
   showRecipeItem(southEastAsianRecipes)
 })
+
+function sortByAscTime() {
+  const sortedRecipes = [...recipes].sort((a, b) => (a.totalTime || Infinity) - (b.totalTime || Infinity))
+  showRecipeItem(sortedRecipes)
+}
+
+function sortByDescTime() {
+  const sortedRecipes = [...recipes].sort((a, b) => (b.totalTime || Infinity) - (a.totalTime || Infinity))
+  showRecipeItem(sortedRecipes)
+}
+
+btnSortByPrepAsc.addEventListener("click", sortByAscTime)
+btnSortByPrepDesc.addEventListener("click", sortByDescTime)
+
+showRecipeItem(recipes)
