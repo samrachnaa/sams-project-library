@@ -242,7 +242,13 @@ const showRecipeItem = (recipes) => {
     sectionRecipes.innerHTML += `
       <div class="recipe-card">
         <h4>${recipe.name}</h4>
-        <img src="${recipe.image}"/>
+        <a href="${recipe.url}" target="_blank"><img src="${recipe.image}"/></a>
+        <span>🥘 ${recipe.cuisineType}</span> <span>⏰ ${recipe.totalTime} min</span> <span>ℹ️ ${recipe.source}</span>
+        <details>
+        <summary>Ingredients</summary>
+        ${recipe.ingredients}
+
+      </details>
       </div>
     `
   })
